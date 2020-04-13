@@ -74,10 +74,10 @@ header {
     padding: 1.2em;
     padding-left: 12em;
     padding-right: 12em;
-    display: flex;
+    display: grid;
     width: 100%;
     vertical-align: middle;
-    justify-content: right;
+    align-items: right;
 }
   
 .logo {
@@ -86,16 +86,14 @@ header {
     font-size: 2.2em;
     vertical-align: middle;
     position: absolute;
-    left: 5.5em;
 }
 
 .logo a {
     color: rgb(19, 19, 19);
 }
 
-.logo,
 nav {
-    vertical-align: middle;
+    float: left;
 }
   
 nav ul {
