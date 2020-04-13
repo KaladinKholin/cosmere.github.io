@@ -74,17 +74,19 @@ header {
     padding: 1.2em;
     padding-left: 12em;
     padding-right: 12em;
-    display: table;
+    display: flex;
     width: 100%;
+    vertical-align: middle;
+    justify-content: right;
 }
   
 .logo {
-      text-align: left;
-      color: rgb(19, 19, 19);
-      font-size: 2.2em;
-      vertical-align: middle;
-      margin-right: 2em;
-      font-weight: bold;
+    text-align: left;
+    color: rgb(19, 19, 19);
+    font-size: 2.2em;
+    vertical-align: middle;
+    position: absolute;
+    left: 5.5em;
 }
 
 .logo a {
@@ -94,24 +96,27 @@ header {
 .logo,
 nav {
     vertical-align: middle;
-    display: table-cell;
 }
   
 nav ul {
     text-align: right;
+    vertical-align: middle;
 }
   
 nav ul li {
     display: inline-block;
-    vertical-align: top;
-    padding-left: 6em;
+    vertical-align: middle;
     font-size: 1.1em;
+    margin-top: 1.6em;
+    margin-bottom: 1.8em;
+    justify-content: right;
 }
 
 nav ul li a {
     color: rgb(19, 19, 19);
     font-weight: bold;
     transition: 0.2s;
+    margin-left: 4em;
 }
 
 nav ul li a:hover {
@@ -137,10 +142,10 @@ nav ul li a:hover {
 
 .titular {
     position: absolute;
-    top: 1em;
-    left: 2em;
+    top: 1.8em;
+    left: 2.6em;
     color: whitesmoke;
-    font-size: 6em;
+    font-size: 4.4em;
     font-weight: bold;
     width: 50%;
     text-align: left;
@@ -149,7 +154,7 @@ nav ul li a:hover {
 
 .portada button {
     position: absolute;
-    top: 300px;
+    top: 16em;
     left: 10em;
     font-size: 1.2em;
     justify-content: left;
