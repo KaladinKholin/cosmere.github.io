@@ -1,0 +1,248 @@
+/* Reseteo del CSS base */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* Fin del reseteo */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Para poner la sombra interior me ayudé de esta página https://designshack.net/articles/css/inner-shadows-in-css-images-text-and-beyond/ */
+
+.portada {
+    width: 100%;
+    box-shadow: inset 50px 100px 83px -36px rgba(0,0,0,0.75);
+}
+
+.portada img {
+    position: relative;
+    /* z-index: -2 lo que me permite es colocar la imagen detrás del div que la contiene, para que se vea la sombra interior */
+    z-index: -2;
+    max-height: 720px;
+    object-fit: cover;
+}
+
+
+/* El link para volver a la página de inicio lo coloqué encima de la imagen dándole una posición absoluta, colocándolo así justo donde yo quiero */
+.portada a {
+    position: absolute;
+    top: 30px;
+    left: 6em;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* Cuando colocas el ratón encima el texto se agranda y se pone de un blanco más puro para que sea más visible */
+.portada a:hover {
+    color: white;
+    font-size: 1.3em;
+}
+
+
+.info {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.portada span {
+    font-weight: bold;
+}
+
+.portada ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.portada ul li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.1em;
+    margin-top: 1.4em;
+    margin-bottom: 1.8em;
+}
+
+.sinopsis {
+    width: 100%;
+}
+
+.sinopsis h1 {
+    font-size: 8em;
+    font-weight: bold;
+    color: #222222;
+    padding-top: 100px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.linea {
+    background-color: #222222;
+    width: 6em;
+    height: 8px;
+    margin: 0 auto;
+}
+
+.sinopsis p {
+    padding-top: 80px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(44, 44, 44);
+    line-height: 1.8em;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 40%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.reseñas {
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 60px;
+}
+
+.lista-reseñas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.reseña {
+    width: 30%;
+    border: black 1px solid;
+    border-radius: 5px;
+
+}
+
+.reseña p {
+    padding: 2em;
+}
+
+.reseña h2 {
+    font-weight: bold;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    font-style: italic;
+}
+
+.libros {
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 60px;
+}
+
+.lista-libros {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.libro {
+    width: 12%;
+    cursor: pointer;
+}
+
+.libro img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.032), -5px -5px 30px 7px rgba(0, 0, 0, 0.032);
+}
+
+.libro2 {
+    width: 25%;
+    cursor: pointer;
+}
+
+.libro2 img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.032), -5px -5px 30px 7px rgba(0, 0, 0, 0.032);
+}
+
+
+/* Aquí adapto el diseño para las pantallas que son menores a la resolución indicada abajo, haciendo que el título sea más pequeño para que no ocupe tanta pantalla, y los márgenes laterales sean menores */
+
+@media (max-width:1500px) {
+
+    .sinopsis h1 {
+        font-size: 5em;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    
+    .sinopsis p {
+        padding-left: 200px;
+        padding-right: 200px;
+
+}
