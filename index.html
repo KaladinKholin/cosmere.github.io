@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmere</title>
+    <!-- Etiqueta para llamar a la hoja de estilos -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Etiqueta para colocar un favicon -->
     <link rel="icon" type="image/png" href="img/icono.png">
 </head>
 <body>
+    <!-- Aquí coloqué una pequeña barra al principio de la web -->
     <div class="top"></div>
+
+    <!-- Coloco la etiqueta header, que va a contener a un div con el logo y otro div con el menú horizontal justificado a la derecha -->
     <header>
         <div class="logo">
-            <a href="#"><img src="img/logo.png" style="max-width: 50%"></a>
-
+            <a href="index.html"><img src="img/logo.png" style="max-width: 50%"></a>
         </div>
             <nav>
               <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#cosmere">Cosmere</a></li>
                 <li><a href="#obras">Obras</a></li>
                 <li><a href="#sanderson">Brandon Sanderson</a></li>
@@ -25,6 +29,7 @@
         </nav>
     </header>
 
+    <!-- Debajo del menú horizontal hay una franja que ocupa todo el ancho de la pantalla que contiene los símbolos de cada una de las sagas de libros del Cosmere -->
     <div class="submenu">
         <img src="img/menu1.png" style="max-width: 5%;">
         <img src="img/menu2.png" style="max-width: 5%;">
@@ -34,12 +39,14 @@
         <img src="img/menu6.png" style="max-width: 5%;">
     </div>
 
+    <!-- Coloco un div que tiene una imagen como portada de la web, la cual ocupa todo el ancho de pantalla, además, encima de esta hay un titular y un botón que te lleva a la web oficial del autor -->
     <div class="portada">
         <img src="img/portada.jpg" style="max-width: 100%;">
         <h4 class="titular">Descubre un <br>universo de magia</h4>
         <a href="http://brandonsanderson.com"><button>WEB OFICIAL</button></a>
     </div>
 
+    <!-- Aquí encontramos la primera sección de la página, la cual lleva un id. Este id lo puse en el uno de los links del menú horizontal para bajar directamente hasta dicha sección -->
     <div id="cosmere">
         <h2>
             ¿Qué es el Cosmere?
@@ -49,16 +56,17 @@
             Cosmere es la palabra que define el universo en el cual muchos de los libros de Brandon Sanderson tienen lugar. Es decir, a pesar de que los libros se desarrollan en diferentes mundos, cada uno de estos planetas se encuentra en la misma galaxia conocida como Cosmere.
         </p>
 
-<p>
+        <p>
 
-Todas las novelas comparten un mismo mito de creación (aunque no todas las culturas que pueblan las páginas lo conocen), una única cosmología, y están conectados por una historia general. A pesar de esto, Brandon ha dicho que no se necesita tener ningún conocimiento del Cosmere para entender los libros, y que cada uno de ellos puede ser disfrutado por separado (en cualquier caso, si buscas un posible orden de lectura, tenemos una sección dedicada a ello que te puede ser de ayuda). Pero, eventualmente será necesario tener una cierta comprensión del Cosmere para entender su trama. Toda la información que forma el Cosmere se está añadiendo lentamente a los libros en forma de pistas y comentarios, una especie de historia detrás de la historia que saltará a primer plano en futuras novelas.
-</p>
+        Todas las novelas comparten un mismo mito de creación (aunque no todas las culturas que pueblan las páginas lo conocen), una única cosmología, y están conectados por una historia general. A pesar de esto, Brandon ha dicho que no se necesita tener ningún conocimiento del Cosmere para entender los libros, y que cada uno de ellos puede ser disfrutado por separado (en cualquier caso, si buscas un posible orden de lectura, tenemos una sección dedicada a ello que te puede ser de ayuda). Pero, eventualmente será necesario tener una cierta comprensión del Cosmere para entender su trama. Toda la información que forma el Cosmere se está añadiendo lentamente a los libros en forma de pistas y comentarios, una especie de historia detrás de la historia que saltará a primer plano en futuras novelas.
+        </p>
 
-<p>
-Un ejemplo que todos entenderemos como comparación, es el Universo Marvel, que tiene un sistema similar. A pesar de tener sus historias propias, todos sus personajes están conectados y a veces se cruzan, ya que viven en el mismo universo. El Cosmere es lo mismo.
+        <p>
+        Un ejemplo que todos entenderemos como comparación, es el Universo Marvel, que tiene un sistema similar. A pesar de tener sus historias propias, todos sus personajes están conectados y a veces se cruzan, ya que viven en el mismo universo. El Cosmere es lo mismo.
         </p>
     </div>
 
+    <!-- La segunda sección es la de los libros/sagas del Cosmere, cada imagen te lleva a su página correspondiente -->
     <div id="obras">
         <div class="lista-libros">
             <div class="libro mb">
@@ -79,11 +87,10 @@ Un ejemplo que todos entenderemos como comparación, es el Universo Marvel, que 
             <div class="libro mb">
                 <a href="arcanum.html"><img class="imagen-libro" src="img/arcanum.jpg"></a>
             </div>
-
         </div>
-    
     </div>
 
+    <!-- La tercera sección es una pequeña biografía del escritor, contiene una imágen del mismo que está, además de un titular y un párrafo, los cuales están flotando al lado de la imagen -->
     <div id="sanderson">
         <img src="img/sanderson.jpg">
         <h1>Brandon Sanderson</h1>
@@ -91,6 +98,7 @@ Un ejemplo que todos entenderemos como comparación, es el Universo Marvel, que 
         <p>Brandon Sanderson nació en diciembre de 1975, en Lincoln, Nebraska. De niño, a Brandon le encantaba leer, pero perdió interés en el tipo de obras que con frecuencia se le sugerían, y para cuando estaba en la educación secundaria media nunca cogía un libro si podía evitarlo. Todo esto cambió cuando en el instituto una astuta profesora, la Sra. Lectora, ofreció a Brandon Vencer al Dragón, de Bárbara Hambly. Brandon disfrutó este libro de principio a fin, y fue en busca de algo similar. Descubrió autores como Robert Jordan, Melanie Rawn, David Eddings, Anne McCaffrey, y Orson Scott Card. Brandon continuó siendo un ávido lector hasta acabar el instituto. Le gustaba tanto la fantasía épica que incluso intentó escribir alguna cosa por sí mismo. Sus primeros intentos, dice, eran terribles.</p>
     </div>
 
+    <!-- La cuarta sección son los otros libros del autor, los cuales están fuera del Cosmere, cada div tiene una imagen, un título y un párrafo, todo flotando al lado de la imagen. Sin embargo, cuando la pantalla es muy pequeña, todo se alinea al centro y la imagen se pone encima del título -->
     <div id="otras">
         <div class="lista-otros">
         <div class="otro-libro mb">
@@ -136,8 +144,19 @@ Un ejemplo que todos entenderemos como comparación, es el Universo Marvel, que 
         </div>
     </div>
 
+    <!-- Por último tenemos el footer, que contiene el título de la web además de el mismo menú horizontal de arriba, pero modificado. También puse los créditos de dónde saqué la información y me di a mí los créditos del diseño de la web -->
     <footer>
-
+        <h4>Cosmere</h4>
+        <div class="linea2"></div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#cosmere">Cosmere</a></li>
+            <li><a href="#obras">Obras</a></li>
+            <li><a href="#sanderson">Brandon Sanderson</a></li>
+            <li><a href="#otras">Otras Obras</a></li>
+        </ul>
+        <p>La información que recoge esta web es de cosmere.es, brandonsanderson.com, wikipedia, y páginas de venta de libros como fnac o lacasadellibro.</p>
+        <p class="creditos">Diseñado por David Machado</p>
     </footer>
 
     </body>

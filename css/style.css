@@ -54,21 +54,25 @@ a:link, a:visited, a:active {
 
 /* Fin del reseteo */
 
+/* Aquí estoy diciendo que dentro de todo el documento html, el scroll va a ser suave */
 html {
     scroll-behavior: smooth;
 }
 
+/* En el body pongo el color del fondo de todo el body, y eligo las familias tipográficas que se van a usar en el documento */
 body {
-    background-color: white;
+    background-color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Aquí le doy forma a la franja que está al comienzo de la página, diciendo que ocupa todo el ancho, 20 píxeles de alto, y el color */
 .top {
     width: 100%;
     height: 20px;
-    background-color: #006fb6;
+    background-color: rgb(24, 24, 24);
 }
 
+/* En el header le digo que el tamaño de la caja no sea alterable por el padding, le pongo un padding general de 1.2 (este se va a aplicar solo arriba y a abajo, porque justo debajo especifico los paddings laterales). */
 header {
     box-sizing: border-box;
     padding: 1.2em;
@@ -76,13 +80,12 @@ header {
     padding-right: 12em;
     display: grid;
     width: 100%;
-    vertical-align: middle;
-    align-items: right;
+    background-color: white;
 }
   
+/* A el div que contiene el logo le doy una posición absoluta para que no se vea afectado por los elementos que tenga al rededor, además de un alineamiento vertical para que se coloque en el medio */
 .logo {
     text-align: left;
-    color: rgb(19, 19, 19);
     font-size: 2.2em;
     vertical-align: middle;
     position: absolute;
@@ -93,24 +96,25 @@ header {
     color: rgb(19, 19, 19);
 }
 
+/* A la etiqueta de navegación le digo que flote para que se ponga al lado de el logo */
 nav {
     float: left;
 }
   
+/* A la lista le digo que se justifique a la derecha */
 nav ul {
     text-align: right;
-    vertical-align: middle;
 }
   
+/* A los elementos de la lista les digo que se coloquen en línea y les doy tamaño y márgenes superior e inferior */
 nav ul li {
     display: inline-block;
-    vertical-align: middle;
     font-size: 1.1em;
     margin-top: 1.4em;
     margin-bottom: 1.8em;
-    justify-content: right;
 }
 
+/* A los links que están contenidos en los elementos de la lista, les doy color, le cambio el peso de la tipografía y márgenes a la izquierda para que se separen entre sí. Además, le pongo una transición de 0.2 segundos para el efecto hover de abajo */
 nav ul li a {
     color: rgb(19, 19, 19);
     font-weight: bold;
@@ -118,11 +122,12 @@ nav ul li a {
     margin-left: 4em;
 }
 
+/* Aquí le digo a los links que cuando el ratón esté encima de ellos, cambie el color de la tipografía */
 nav ul li a:hover {
     color: #006fb6;
-    font-weight: bold;
 }
 
+/* A este contenedor le doy paddings, le cambio el color de fondo y además le digo que los ejementos que estén contenidos aquí sean flexibles y que tengan un espacio entre ellos, es decir, el primer elemento y el último estarán pegados al borde, pero habrá espacios entre ellos */
 .submenu {
     padding-left: 12em;
     padding-right: 12em;
@@ -133,12 +138,13 @@ nav ul li a:hover {
     justify-content: space-between;
 }
 
+/* A la portada le doy una posición relativa para luego colocar el titular encima */
 .portada {
     position: relative;
     display: inline-block;
-    text-align: center;
 }
 
+/* Al titular le doy una posición absoluta para que pueda estar encima de la imagen, también le doy una pequeña sombra al texto para una mejor visibilidad */
 .titular {
     position: absolute;
     top: 1.8em;
@@ -151,6 +157,7 @@ nav ul li a:hover {
     text-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.032), -5px -5px 30px 7px rgba(0, 0, 0, 0.032);;
 }
 
+/* Al botón también le doy una posición absoluta, y le digo que tenga las esquinas redondeadas con border-radius, le quité el borde que tiene por defecto los botones y también le di tiempo de transición */
 .portada button {
     position: absolute;
     top: 16em;
@@ -159,7 +166,7 @@ nav ul li a:hover {
     justify-content: left;
     margin-top: 4em;
     border-radius: 10px;
-    background-color: tomato;
+    background-color: #815649;
     border: none;
     padding: 1em;
     padding-left: 3em;
@@ -170,20 +177,22 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/* Le digo al botón que se escale un poco */
 .portada button:hover {
-    color: whitesmoke;
     transform: scale(1.1, 1.1);
 }
 
+/* Aquí le cambio el color al link ya visitado para que siga siendo blanco */
 .portada button a:visited {
     color: whitesmoke;
 }
+
 
 #cosmere {
     width: 100%;
     padding-top: 6em;
     padding-bottom: 6em;
-    background-color: whitesmoke;
+    background-color: white;
     text-align: center;
 }
 
@@ -194,6 +203,7 @@ h2 {
     margin-bottom: 2em;
 }
 
+/* A la línea divisoria le pongo un margen automático para que se ponga justo en el centro */
 .linea {
     background-color: #006fb6;
     width: 6em;
@@ -215,13 +225,15 @@ p {
     padding-top: 8em;
     padding-left: 12em;
     padding-right: 12em;
-    padding-bottom: 8em;
+    padding-bottom: 4em;
 }
 
+/* Creé una clase llamaba mb para añadir un margen inferior a los elementos que necesitara */
 .mb {
     margin-bottom: 4em;
 }
 
+/* Al contenedor de los libros le dije que los elementos dentro del mismo fueran flexibles y que tuvieran dejaran espacio al rededor de ellos, al contrario que space-between, en space-around el primer y último elemento no están pegados al borde*/
 .lista-libros {
     width: 100%;
     display: flex;
@@ -229,7 +241,10 @@ p {
     flex-wrap: wrap;
 }
 
+/* Los divs y las imágenes que lo contienen, tienen esquinas redondeadas solo en la parte superior y una sombra exterior (también tienen una transición para escalarlas luego) */
 .libro {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.032), -5px -5px 30px 7px rgba(0, 0, 0, 0.032);
     cursor: pointer;
     transition: 0.4s;
@@ -237,8 +252,11 @@ p {
 
 .imagen-libro {
     object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
+/* Aquí reduzco el tamaño de los divs, y le aumento la sombra exterior, para dar un efecto de que se acercan a una pared o al suelo */
 .libro:hover {
     transform: scale(0.96, 0.96);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.080), 
@@ -248,10 +266,11 @@ p {
 
 #sanderson {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     display: inline-block;
 }
 
+/* A la imagen de Brandon Sanderson, le estoy diciendo que el tamaño máximo al que puede llegar es al 30% del ancho de la pantalla */
 #sanderson img {
     max-width: 30%;
     margin-right: 4em;
@@ -315,6 +334,7 @@ h3 {
     padding-top: 0.1em;
 }
 
+/* Cuando el cursor esté encima del div el título cambiará de color */
 .otro-libro:hover {
     color: #006fb6;
 }
@@ -329,10 +349,73 @@ h3 {
 
 footer {
     width: 100%;
-    height: 300px;
-    background-color: #006fb6;
+    background-color: rgb(24, 24, 24);
+    text-align: center;
 }
 
+footer h4 {
+    font-size: 2em;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.linea2 {
+    background-color: whitesmoke;
+    width: 4em;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 1.4em;
+}
+
+
+footer ul li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    padding: 1.2em;
+}
+
+footer ul li a {
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+footer ul li a:hover {
+    color: #006fb6;
+}
+
+footer p {
+    color: rgb(124, 124, 124);
+    padding-left: 20em;
+    padding-right: 20em;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding-bottom: 1em;
+}
+
+.creditos {
+    color: rgb(124, 124, 124);
+    padding-left: 20em;
+    padding-right: 20em;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding-bottom: 4em;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.creditos:hover {
+    color: #006fb6;
+    padding-left: 20em;
+    padding-right: 20em;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+
+/* Aquí adapto el diseño para las pantallas que son menores a la resoluciones indicadas abajo, haciendo que las imágenes de la sección #obras se hagan más pequeñas. También, en la sección #otras-obras, las imágenes dejan de estar alineadas a la izquierda para ponerse encima del texto, el cual de alinea al centro. */
 
 @media (max-width:1720px) {
     .imagen-libro {
@@ -343,15 +426,39 @@ footer {
 }
 
 @media (max-width:1500px) {
+
+    .titular {
+        top: 1.2em;
+        left: 3em;
+        font-size: 4em;
+    }
+    
+
+    .portada button {
+        top: 12em;
+        left: 10em;
+    }
+
+    p {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+
     .imagen-libro {
         object-fit: cover;
         width: 300px;
         height: 300px;
     }
 
+    #otras {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+
     .otro-libro img {
         float: none;
         margin: 0;
+        margin-bottom: 1.2em;
     }
 
     .otro-libro {

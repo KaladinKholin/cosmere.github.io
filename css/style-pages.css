@@ -54,10 +54,12 @@ a:link, a:visited, a:active {
 
 /* Fin del reseteo */
 
+/* Aquí estoy diciendo que dentro de todo el documento html, el scroll va a ser suave */
 html {
     scroll-behavior: smooth;
 }
 
+/* En el body pongo el color del fondo de todo el body, y eligo las familias tipográficas que se van a usar en el documento */
 body {
     background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -102,10 +104,13 @@ body {
     background-color: whitesmoke;
 }
 
+/* Un span para poner algunas palabras en negrita */
 .portada span {
     font-weight: bold;
 }
 
+
+/* Lo que he hecho a partir de aquí ya está comentado en la hoja de estilos de la página principal */
 .portada ul {
     display: flex;
     justify-content: space-between;
@@ -153,6 +158,7 @@ body {
     line-height: 1.8em;
 }
 
+/* Aquí modifico el tamaño y la posición del divisor, también le bajé la opacidad */
 hr {
     width: 80%;
     margin: 0 auto;
